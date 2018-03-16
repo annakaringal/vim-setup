@@ -406,12 +406,13 @@ set nofoldenable
 let g:NERDTreeWinPos = "left"
 let NERDTreeShowHidden = 1
 let NERDTreeIgnore = ['\.pyc$', '__pycache__', '\.git']
-let g:NERDTreeWinSize=36
+let g:NERDTreeWinSize = 36
 let NERDTreeMinimalUI = 1
 map <leader>nn :NERDTreeToggle<cr>
 map <leader>nb :NERDTreeFromBookmark<Space>
 map <leader>nf :NERDTreeFind<cr>
-
+let g:NERDTreeMapJumpNextSibling = '<Nop>'
+let g:NERDTreeMapJumpPrevSibling = '<Nop>'
 
 syntax enable
 colorscheme monokai
