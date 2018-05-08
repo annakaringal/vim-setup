@@ -422,8 +422,6 @@ augroup filetype javascript syntax=javascript
 set colorcolumn=80
 highlight ColorColumn ctermbg=0 guibg=lightgrey
 
-set number
-
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Ack searching and cope displaying
 " "    requires ack.vim - it's much better than vimgrep/grep
@@ -457,4 +455,7 @@ map <leader>cc :botright cope<cr>
 map <leader>co ggVGy:tabnew<cr>:set syntax=qf<cr>pgg
 map <leader>n :cn<cr>
 map <leader>p :cp<cr>
-"
+
+
+nmap <leader>ln :let [&nu, &rnu] = [!&rnu, &nu+&rnu==1]<cr>
+
