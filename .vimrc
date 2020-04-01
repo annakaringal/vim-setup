@@ -463,3 +463,5 @@ map <leader>p :cp<cr>
 
 
 nmap <leader>ln :let [&nu, &rnu] = [!&rnu, &nu+&rnu==1]<cr>
+
+:setlocal foldmethod=syntax
