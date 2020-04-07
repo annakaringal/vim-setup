@@ -481,8 +481,10 @@ let g:black_skip_string_normalization = ''
 let g:black_linelength = 79
 autocmd BufWritePre *.py execute ':Black'
 
-" Freeze Black to specific version since there seems to be a bug in latest
-" https://github.com/psf/black/issues/1293
-" Plug 'psf/black', { 'tag': '19.10b0' } 
 
-
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Ale
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+let g:ale_fixers = {
+\   'javascript': ['prettier'],
+\}
